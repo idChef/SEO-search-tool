@@ -31,9 +31,6 @@ $: descriptionProgress = countPercent(description.length,150)
       <h1 class="title">
         SEO Tool
       </h1>
-      <p class="subtitle">
-		Figure out how many characters you need in title and description!
-      </p>
 	</div>
 	<div class="container mt-4">
 	<div class="field">
