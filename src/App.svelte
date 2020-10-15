@@ -25,6 +25,14 @@ $: descriptionProgress = countPercent(description.length,150)
 	.progress::-webkit-progress-value {
   transition: width 0.2s ease;
 }
+	
+	h3{
+	    word-break: break-word;
+	}
+	
+	p{
+	    word-break: break-word;
+	}
 </style>
 <section class="section column is-one-quarter box">
     <div class="container">
