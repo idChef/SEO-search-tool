@@ -31,6 +31,13 @@ $: descriptionProgress = countPercent(description.length,150)
       <h1 class="title">
         SEO Tool
       </h1>
+      <p class="subtitle">
+		Figure out how many characters you need in title and description!
+      </p>
+	</div>
+	<div class="box mt-5" style="max-width: 600px; min-height: 142px;">
+		<h3 style="font-size: 20px; color:#1a0dab;">{title}</h3>
+		<p style="font-size: 14px;">{description}</p>
 	</div>
 	<div class="container mt-4">
 	<div class="field">
@@ -40,9 +47,6 @@ $: descriptionProgress = countPercent(description.length,150)
 		</div>
 	  </div>
 	  <progress class="progress" class:is-danger="{title.length<30 || title.length>60}" class:is-warning="{title.length<50}" class:is-success={title.length>=50} value="{titleProgress}" max="100">{titleProgress}%</progress>
-		<p class="subtitle is-6">
-			Title is {title.length} characters.
-		  </p>
 	  <div class="field">
 		<label class="label">Description</label>
 		<div class="control">
@@ -50,14 +54,8 @@ $: descriptionProgress = countPercent(description.length,150)
 		</div>
 	  </div>
 	  <progress class="progress" class:is-danger="{description.length<100 || description.length>160}" class:is-warning="{description.length<140}" class:is-success={title.length>=140} value="{descriptionProgress}" max="100">{descriptionProgress}%</progress>
-		<p class="subtitle is-6">
-			Description is {description.length} characters.
-		  </p>
 	</div>
-	<div class="box mt-5" style="max-width: 600px; min-height: 142px;">
-		<h3 style="font-size: 20px; color:#1a0dab;">{title}</h3>
-		<p style="font-size: 14px;">{description}</p>
-	</div>
+	
 	</section>
 
 	
