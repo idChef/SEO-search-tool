@@ -61,7 +61,7 @@ $: descriptionProgress = countPercent(description.length,150)
 		  <input class="input" type="text" bind:value={description} placeholder="Description">
 		</div>
 	  </div>
-	  <progress class="progress" class:is-danger="{description.length<100 || description.length>160}" class:is-warning="{description.length<140}" class:is-success={title.length>=140} value="{descriptionProgress}" max="100">{descriptionProgress}%</progress>
+	  <progress class="progress" class:is-danger="{description.length<100 || description.length>160}" class:is-warning="{description.length<140}" class:is-success={description.length>=140} value="{descriptionProgress}" max="100">{descriptionProgress}%</progress>
 	</div>
 	
 	</section>
