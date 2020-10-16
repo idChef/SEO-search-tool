@@ -62,7 +62,5 @@ $: descriptionProgress = countPercent(description.length,150)
 	  </div>
 	  <progress class="progress" class:is-danger="{description.length<100 || description.length>160}" class:is-warning="{description.length<140}" class:is-success={description.length>=140} value="{descriptionProgress}" max="100">{descriptionProgress}%</progress>
 	</div>
+	<p style="position: absolute; bottom: 0; width: 100%; left: 0; right:0; text-align: center; background: #fafafa; padding: 10px 0;">Made with ❤️ by <a style="color: #4a4a4a;"href="https://github.com/idChef">Tymoteusz Kossek</a></p>
 	</section>
-
-
-	
